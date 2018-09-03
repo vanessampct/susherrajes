@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="img1.png" />
     <style>
+
+        .titulo{
+                background-image: linear-gradient(to right, blue,#3498DB,#AED6F1);
+                text-align:center;
+                font-size: 50px;
+                color: white;
+            }
        
         header nav
         {
@@ -14,6 +21,7 @@
         {
             list-style:none; 
             display:flex; 
+            padding: 0;
         }  body
         {
             font-family:gabriola;
@@ -23,7 +31,7 @@
         header nav ul li
         {
             flex: 1;
-            font-size: 30px;
+            font-size: 20px;
         }
         header nav ul li a
         {
@@ -58,26 +66,29 @@
         }
         
         .tab button:hover {
-            background-color: #00CCCC;
+            background-color: #88B7F3  ;
         }
         
         .tab button.active {
-            background-color: #0066cc;
+            background-color:#AACBF7  ;
         }
 
         .tabcontent {
             display: none;
             padding: 6px 12px;
-            border: 1px solid #3300FF;
+            border: 1px solid blue;
             border-top: none;
         }
         </style>
  </head>
   <body>
         <header>
-                <div class="derecha">
-                    <font color= "blue" size=19 face="Comic Sans MS,arial,verdana"><h5 align="center">Kardex</h5></font>
-                </div>
+            <div class="titulo">
+            <h1>Kardex</h1></font>
+            <hr>
+            </div>
+                        
+           <input style="font-size: 25px; margin: 10px;" type="text" name="search" placeholder="Buscar" >
                 
               <nav>
                    <ul>
@@ -97,14 +108,9 @@
               </nav>
               </header>
 
-      <br>
-      <input type="text" name="search" placeholder="Buscar">
-      <br>
-      <br>
-
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Historico')">Historico</button>
-        <button class="tablinks" onclick="openCity(event, 'Inventario')">Inventario</button>
+        <button class="tablinks" onclick="openCity(event, 'Historico')"><p style="color:White";>Historico</p></button>
+        <button class="tablinks" onclick="openCity(event, 'Inventario')"><p style="color: White";>Inventario</p></button>
       </div>
       
       <div id="Historico" class="tabcontent">

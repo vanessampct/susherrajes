@@ -10,35 +10,40 @@
                 margin: 10px;
                 border: 10px solid blue;
             }
-            .titulo{
-                background-image: linear-gradient(to right, blue,#3498DB,#AED6F1);
-                text-align:center;
-                font-size: 50px;
-                color: white;
-            }
-            .boton_personalizado{
-              text-decoration: none;
-              padding: 10px;
-              font-weight: 600;
-              font-size: 20px;
-              color: #ffffff;
-              background-color: #1883ba;
-              border-radius: 6px;
-              border: 2px solid #0016b0;
-            }
-            .boton_personalizado:hover{
-              color: #1883ba;
-              background-color: #ffffff;
-            }
-           .marquee{
-            background: linear-gradient(to right, blue,#3498DB,#AED6F1);
-            font-size: 40px;
-            position: relative;
-            /* margin-top: 170px; */
-            height: 100px;
-            text-align: center;
-            color: #fff;
-           }
+      header nav
+        {
+            background:#528fd5;
+            overflow:hidden;
+        }
+        header nav ul
+        {
+            list-style:none; 
+            display:flex; 
+        }  body
+        {
+            font-family:gabriola;
+            margin: 10px;
+            border: 10px solid blue;
+        }
+        header nav ul li
+        {
+            flex: 1;
+            font-size: 30px;
+        }
+        header nav ul li a
+        {
+            padding:10px 20px; 
+            display:block; 
+            color:#FFFFFF; 
+            text-decoration:none;
+        }
+        header nav ul li a:hover
+        {
+            background:#75acec;
+        }
+
+        body {font-family: Arial;}
+           
 
           </style>
 
@@ -46,40 +51,30 @@
  </head>
  <body>
         <div class="titulo">
-        <h1>Susherrajes</h1></font>
+        <font color= "blue" size=19 face="Comic Sans MS,arial,verdana"><h1 align="center">Susherrajes</h1></font>
         <hr>
         </div>
-        <div align="center"><img src="img1.png"></div>
-        
-        <br>
-        <form class="example" action="/action_page.php" align="center">
-        <br>
-        <input style="font-size: 25px" type="text" name="search" placeholder="Buscar" >
-        <br>
-        <br>
-        <div class="contenedor_espacio">
-        <nav>
-        	
-            <div class="izquierda">
-            <a class="boton_personalizado" href="kardex.html">Kardex</a>
-            <a class="boton_personalizado" href="Fantaxias.html">Fantaxias</a>
-            <a class="boton_personalizado" href="#">Formartex</a>
-            <a class="boton_personalizado" href="#">Tiber</a>
-            <a class="boton_personalizado" href="#">Macro Herrajes</a>
-            <a class="boton_personalizado" href="#">Mil Herrajes</a>
-            <a class="boton_personalizado" href="#">General</a>
-            <a class="boton_personalizado" href="#">Cadenas de Hierro</a> 
-            <a class="boton_personalizado" href="#">Cadenas Aluminio y Acero</a>             
-            </div>
-            
-        </nav>
-        </div>
-        </form>
-        <footer class="marquee">
-                <marquee scrollamount="20" loop="infinite"><p>
-                    "Cuando las prioridades están claras, las desiciones se toman fácilmente"
-                </p></marquee>
-            </footer>
+         
+        <input type="text" name="search" placeholder="Buscar">
+         <header>
+                
+              <nav>
+                   <ul>
+                    <li><a href="index.html">Inicio</a></li>    
+                    <li><a href="kardex.html">Kardex</a></li>
+                    <li><a href="Fantaxias.html">Fantaxias</a></li>
+                    <li><a href="Formatex.html">Formatex</a></li>
+                    <li><a href="Tiber.html">Tiber</a></li>
+                    <li><a href="General.html">General</a></li>
+                    <li><a href="Macro_Herrajes.html">Macro Herrajes</a></li>
+                    <li><a href="Mil_Herrajes.html">Mil Herrajes</a></li>
+                    <li><a href="Cadenas_Hierro.html">Cadenas Hierro</a></li>
+                   <li><a href="Cadenas_Alum_y_Acero.html">Cadenas Aluminio</a></li>
+                   </ul>
+              </nav>
+              </header>
+    <img src="img1.png"/>    
+
 
         
 

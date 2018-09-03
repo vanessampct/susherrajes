@@ -4,9 +4,17 @@
         <servlet-name>ProveedorServlet</servlet-name>
         <servlet-class>controlador.ProveedorServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Formatex</servlet-name>
+        <servlet-class>controlador.Formatex</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProveedorServlet</servlet-name>
         <url-pattern>/ProveedorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Formatex</servlet-name>
+        <url-pattern>/Formatex</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
