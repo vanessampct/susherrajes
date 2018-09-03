@@ -1,0 +1,144 @@
+<html>
+ <head>
+    <title>Susherrajes</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="img1.png" />
+    <style>
+
+        .titulo{
+                background-image: linear-gradient(to right, blue,#3498DB,#AED6F1);
+                text-align:center;
+                font-size: 50px;
+                color: white;
+            }
+       
+        header nav
+        {
+            background:#528fd5;
+            overflow:hidden;
+        }
+        header nav ul
+        {
+            list-style:none; 
+            display:flex; 
+            padding: 0;
+        }  body
+        {
+            font-family:gabriola;
+            margin: 10px;
+            border: 10px solid blue;
+        }
+        header nav ul li
+        {
+            flex: 1;
+            font-size: 20px;
+        }
+        header nav ul li a
+        {
+            padding:10px 20px; 
+            display:block; 
+            color:#FFFFFF; 
+            text-decoration:none;
+        }
+        header nav ul li a:hover
+        {
+            background:#75acec;
+        }
+
+        body {font-family: Arial;}
+        
+        
+        .tab {
+            overflow: hidden;
+            border: 1px solid #000099;
+            background-color: #000099;
+        }
+        
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        
+        .tab button:hover {
+            background-color: #88B7F3  ;
+        }
+        
+        .tab button.active {
+            background-color:#AACBF7  ;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid blue;
+            border-top: none;
+        }
+        </style>
+ </head>
+  <body>
+        <header>
+            <div class="titulo">
+            <h1>Kardex</h1></font>
+            <hr>
+            </div>
+                        
+           <input style="font-size: 25px; margin: 10px;" type="text" name="search" placeholder="Buscar" >
+                
+              <nav>
+                   <ul>
+                    <li><a href="index.html">Inicio</a></li>    
+                    <li><a href="#">Kardex</a></li>
+                    <li><a href="Fantaxias.html">Fantaxias</a></li>
+                    <li><a href="Formatex.html">Formatex</a></li>
+                    <li><a href="Tiber.html">Tiber</a></li>
+                    <li><a href="General.html">General</a></li>
+                    <li><a href="Macro_Herrajes.html">Macro Herrajes</a></li>
+                    <li><a href="Mil_Herrajes.html">Mil Herrajes</a></li>
+                    <li><a href="Cadenas_Hierro.html">Cadenas Hierro</a></li>
+                    <li><a href="Cadenas_Alum_y_Acero.html">Cadenas Aluminio</a></li>
+
+                    
+                   </ul>
+              </nav>
+              </header>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Historico')"><p style="color:White";>Historico</p></button>
+        <button class="tablinks" onclick="openCity(event, 'Inventario')"><p style="color: White";>Inventario</p></button>
+      </div>
+      
+      <div id="Historico" class="tabcontent">
+        <h3>Historico</h3>
+        <p>Tabla</p>
+      </div>
+      
+      <div id="Inventario" class="tabcontent">
+        <h3>Inventario</h3>
+        <p>Referencias</p> 
+      </div>
+
+      <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        </script>
+
+
+  </body>
+ </html>

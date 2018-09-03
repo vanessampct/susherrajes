@@ -1,0 +1,90 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>proveedor</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+	body{
+		background-color: #5DA8E7;
+	}
+
+	.color  {
+		height: 20px;
+	}
+	.margen-abajo {
+		margin-bottom: 50px;
+	}
+</style>		
+</head>
+<body>
+<div class="container">
+		<div class="d-flex justify-content-center margen-abajo">
+			<img style="height: 150px; width: 480px;" src="logo.jpg" />
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6">
+				<h1 class="text-right">Proveedor</h1>
+				<form>
+				  <div class="form-group row">
+				    <label for="inputNombre" class="col-sm-2 col-form-label text-right font-weight-bold">Nombre</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="inputNombre" placeholder="Escriba el proveedor">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="inputTelefono" class="col-sm-2 col-form-label text-right font-weight-bold">Teléfono</label>
+				    <div class="col-sm-10">
+				      <input type="number" class="form-control" id="inputTelefono" placeholder="Escriba número de teléfono">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="inputColor" class="col-sm-2 col-form-label text-right font-weight-bold">Color</label>
+				    <div class="col-sm-10">
+				      <input type="color" id="inputColor" placeholder="">
+				    </div>
+				  </div>
+				  <div class="form-group d-flex justify-content-end">
+				    <div class="">
+				      <button type="submit" class="btn btn-primary">Guardar</button>
+				    </div>
+				  </div>
+				</form>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Nombre</th>
+				      <th scope="col">Teléfon</th>
+				      <th scope="col">Color</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Fantaxias</td>
+				      <td>5678890</td>
+				      <td><div class="color" style="background-color: #4e4ed8"></div></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Formatex</td>
+				      <td>5057406</td>
+				      <td><div class="color" style="background-color: #0f0"></div></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Tiber</td>
+				      <td>5118419</td>
+				      <td><div class="color" style="background-color: #a84ed8"></div></td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="col-3"></div>
+		</div>
+	</div>
+</body>
+</html>

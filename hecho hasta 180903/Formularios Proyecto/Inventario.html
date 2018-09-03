@@ -1,0 +1,96 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inventario</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+	body{
+		background-color: #5DA8E7;
+	}
+	.margen-abajo {
+		margin-bottom: 50px;
+	}
+</style>		
+</head>
+<body>
+<div class="container">
+		<div class="d-flex justify-content-center margen-abajo">
+			<img style="height: 150px; width: 480px;" src="logo.jpg" />
+		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-6">
+				<h1 class="text-right">Inventario</h1>
+				<form>
+				  <div class="form-group row">
+				    <label for="inputFecha" class="col-sm-2 col-form-label text-right font-weight-bold">Fecha</label>
+				    <div class="col-sm-10">
+				      <input type="date" class="form-control" id="inputFecha" placeholder="Escriba la Fecha">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="inputCantidad" class="col-sm-2 col-form-label text-right font-weight-bold">Cantidad</label>
+				    <div class="col-sm-10">
+				      <input type="number" class="form-control" id="inputCnatidad" placeholder="Escriba la Cantidad">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="inputZona" class="col-sm-2 col-form-label text-right font-weight-bold">Zona</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="inputZona" placeholder="Escriba la Zona">
+				      </div>
+				    </div>
+				    <div class="form-group row">
+				    <label for="inputProducto" class="col-sm-2 col-form-label text-right font-weight-bold">Producto</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="inputZona" placeholder="Escriba el producto">
+				    </div>
+				  </div>
+				  <div class="form-group d-flex justify-content-end">
+				    <div class="">
+				      <button type="submit" class="btn btn-primary">Guardar</button>
+				    </div>
+				  </div>
+				</form>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Fecha</th>
+				      <th scope="col">Cantidad</th>
+				      <th scope="col">Zona</th>
+				      <th scope="col">Producto</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>11/09/2015</td>
+				      <td>160</td>
+				      <td>Zona 10</td>
+				      <td>H 339-25 SN</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>07/11/2017</td>
+				      <td>96</td>
+				      <td>Zona 4</td>
+				      <td>4073 DORADO</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>08/10/2015</td>
+				      <td>370</td>
+				      <td>Zona 5</div></td>
+				      <td>R 004 3/4 PL   MEDIA ARGOLLA</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<div class="col-3"></div>
+		</div>
+	</div>
+</body>
+</html>
